@@ -27,3 +27,348 @@
   text-decoration: underline;
 }
 }
+/* ============================================
+   Tsion Mektie · IT Portfolio
+   style.css
+   ============================================ */
+
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- Base ---------- */
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background: #fbfcfd;
+  color: #1e2b37;
+  line-height: 1.6;
+  padding: 1.5rem;
+}
+
+/* Optional wrapper if you add one; otherwise the body centers content */
+main,
+header,
+footer {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+nav b {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0b2b3b;
+}
+
+nav b span {
+  color: #1e7e8f;
+  font-weight: 800;
+}
+
+nav > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  font-weight: 500;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2a4a5c;
+  font-size: 1rem;
+  transition: color 0.2s, border-color 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.2rem;
+}
+
+nav a:hover {
+  color: #0d5b6b;
+  border-bottom-color: #1e7e8f;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(135deg, #f0f7fa 0%, #e2eef4 100%);
+  padding: 2.5rem 2.2rem;
+  border-radius: 2rem;
+  margin-top: 0.3rem;
+}
+
+.hero h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0.2rem 0 1rem;
+  color: #0b2b3b;
+}
+
+.hero h1 span {
+  background: linear-gradient(145deg, #0f5e6e, #1e7e8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  max-width: 720px;
+  color: #1f3d4b;
+  margin-bottom: 1.8rem;
+}
+
+/* ---------- Shared typography ---------- */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #1e7e8f;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+h2 {
+  font-size: 1.9rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  color: #0b2b3b;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #1e7e8f;
+  padding-left: 1.2rem;
+}
+
+/* ---------- Button ---------- */
+.button {
+  display: inline-block;
+  background: #1e7e8f;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  box-shadow: 0 8px 16px -6px rgba(20, 100, 120, 0.35);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.button:hover {
+  background: #156575;
+  transform: scale(1.02);
+}
+
+/* ---------- Sections ---------- */
+section {
+  margin: 3rem 0;
+}
+
+section.tint,
+.section-tint {
+  background: #f4fafc;
+  border-radius: 1.8rem;
+  padding: 2rem 2rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+/* ---------- Cards (projects & certificates) ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.cards article {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1.6rem 1.5rem;
+  box-shadow: 0 8px 20px -8px rgba(0, 30, 40, 0.08);
+  border: 1px solid #deecf0;
+  transition: all 0.2s;
+}
+
+.cards article:hover {
+  border-color: #b8d9e2;
+  box-shadow: 0 16px 24px -8px rgba(20, 80, 100, 0.12);
+}
+
+.cards small {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1e7e8f;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.cards h3 {
+  font-size: 1.3rem;
+  font-weight: 650;
+  margin-bottom: 0.7rem;
+  color: #112b36;
+}
+
+.cards p {
+  font-size: 0.95rem;
+  color: #2e4b57;
+  margin-bottom: 0.8rem;
+}
+
+.cards a {
+  color: #1e7e8f;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px dashed #a0c8d4;
+}
+
+.cards a:hover {
+  color: #0d4e5c;
+  border-bottom-style: solid;
+}
+
+.cards em {
+  font-size: 0.8rem;
+  color: #6f8b96;
+  font-style: italic;
+  display: block;
+  margin-top: 0.6rem;
+  border-left: 2px solid #cfe2e9;
+  padding-left: 0.7rem;
+}
+
+/* ---------- Skills ---------- */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-top: 1rem;
+}
+
+.skills span {
+  background: #ffffff;
+  border: 1px solid #cde2e9;
+  padding: 0.5rem 1.2rem;
+  border-radius: 3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1b4a5a;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* ---------- Notes / disclaimers ---------- */
+.note,
+.disclaimer {
+  background: #fef7e6;
+  color: #896f2e;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-top: 0.8rem;
+}
+
+.disclaimer {
+  background: #f0f5f8;
+  color: #3e6273;
+}
+
+/* Inline italics (used for skills *keep Java... note) */
+section#skills > em,
+.inline-em {
+  font-size: 0.85rem;
+  color: #6b8a98;
+  margin-top: 0.5rem;
+  display: block;
+  font-style: italic;
+}
+
+/* ---------- Contact ---------- */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact-links a,
+section#contact a {
+  color: #1e7e8f;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-links a:hover,
+section#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6f8b96;
+  margin-top: 3rem;
+  border-top: 1px solid #d7e7ed;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+/* ---------- Misc helpers ---------- */
+.cert-date {
+  color: #628591;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  body {
+    padding: 0.8rem;
+  }
+
+  .hero {
+    padding: 1.8rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  nav > div {
+    gap: 1rem;
+  }
+
+  section.tint,
+  .section-tint {
+    padding: 1.5rem 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
